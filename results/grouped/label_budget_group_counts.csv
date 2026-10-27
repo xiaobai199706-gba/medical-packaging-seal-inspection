@@ -1,0 +1,5 @@
+set,normal,defect,normal_content_groups,defect_content_groups,total_content_groups,role
+train,336,3,263,3,266,fixed selected list
+validation,84,20,84,20,104,fixed selected list
+test,120,120,88,67,155,"metrics only, not training/calibration"
+calibration_one,84,1,84,1,85,fixed selected list

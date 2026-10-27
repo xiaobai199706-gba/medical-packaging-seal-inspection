@@ -1,0 +1,20 @@
+{
+  "protocol": "SSI-ContentGroup-Sparse3-v1",
+  "split_seed": 20261023,
+  "group_basis": "content similarity, NOT confirmed physical package identity",
+  "edges": [
+    "file SHA256 equality",
+    "decoded pixel SHA256 equality",
+    "all 430 initial candidates: pHash63<=8 AND gray256 RMSE<=0.03 AND SSIM>=0.98"
+  ],
+  "transitive_components": true,
+  "native_confirmed_subset": 406,
+  "physical_identity_edges": 0,
+  "physical_metadata": "no reliable IDs found in previously audited supplied metadata; filename proxies NOT merged",
+  "allocation": "seeded largest-component-first greedy minimum incremental class-wise squared target error divided by target; class targets 60/20/20",
+  "selection": "seeded content-group round-robin, one image per group before second; sort final lists by label then relative path",
+  "calibration_one_defect_selection": "same round-robin with seed 20262023 over selected validation defects; all 84 selected normal validation images retained",
+  "unused": "remain in original assigned pool; never moved to satisfy quotas",
+  "nature": "retrospective supplementary validation, not prospective production validation",
+  "limitations": "only detected content associations isolated; physical entities/batches unknown; no performance-based split/selection"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ds1_partial01_real_only_seed7_updates1020", "seed": 7, "supervision_mode": "real_only",
+  "image_size": [256, 256], "batch_size": 8, "num_workers": 1, "epochs": 340, "val_fraction": 0.2,
+  "backbone": "wide_resnet50_2", "layers": ["layer2", "layer3"], "patch_size": 3,
+  "noise": true, "perlin": true, "no_anomaly": "empty", "bad": true, "overlap": false,
+  "adapt_cls_feat": false, "noise_std": 0.015, "perlin_thr": 0.6,
+  "seg_lr": 0.0002, "dec_lr": 0.0002, "adapt_lr": 0.0001,
+  "gamma": 0.4, "stop_grad": false, "clip_grad": true
+}

@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/blaz-r/SuperSimpleNet",
+  "commit": "98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d",
+  "archive_sha256": "83c5a246c62950ebaacfa4990a505c2d4bf7601b3c7a67dc0609372858f356cf",
+  "license": "MIT",
+  "python": "3.10.16",
+  "core_dependencies": {
+    "torch": "2.1.0+cu118",
+    "torchvision": "0.16.0+cu118",
+    "anomalib": "0.7.0",
+    "numpy": "1.26.0",
+    "albumentations": "1.3.1",
+    "scikit-learn": "1.5.2",
+    "setuptools": "80.9.0"
+  }
+}

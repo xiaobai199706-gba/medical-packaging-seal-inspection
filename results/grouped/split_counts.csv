@@ -1,0 +1,7 @@
+split,stage,normal,defect,images,content_groups
+train,candidate_pool,360,360,720,462
+train,selected,336,3,339,266
+validation,candidate_pool,120,120,240,154
+validation,selected,84,20,104,104
+test,candidate_pool,120,120,240,155
+test,selected,120,120,240,155

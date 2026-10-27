@@ -1,0 +1,52 @@
+{
+  "name": "SSI-CG-Sparse3-v1-real_only-S2024",
+  "seed": 2024,
+  "supervision_mode": "real_only",
+  "image_size": [
+    256,
+    256
+  ],
+  "batch_size": 8,
+  "num_workers": 0,
+  "epochs": 340,
+  "val_fraction": 0.2,
+  "backbone": "wide_resnet50_2",
+  "layers": [
+    "layer2",
+    "layer3"
+  ],
+  "patch_size": 3,
+  "noise": true,
+  "perlin": true,
+  "no_anomaly": "empty",
+  "bad": true,
+  "overlap": false,
+  "adapt_cls_feat": false,
+  "noise_std": 0.015,
+  "perlin_thr": 0.6,
+  "seg_lr": 0.0002,
+  "dec_lr": 0.0002,
+  "adapt_lr": 0.0001,
+  "gamma": 0.4,
+  "stop_grad": false,
+  "clip_grad": true,
+  "protocol": "SSI-ContentGroup-Sparse3-v1",
+  "optimizer_updates": 1020,
+  "scheduler_unit": "optimizer_step",
+  "lr_milestones_updates": [
+    816,
+    918
+  ],
+  "checkpoint_interval_epochs": 20,
+  "skip_training_validation": true,
+  "final_weights_only": true,
+  "split_manifest_sha256": "f3295d6d545d1c2b9e59b6025ff9abdce991ee43c8ec611a309d0a214b136dc5",
+  "label_budget": {
+    "train_normal": 336,
+    "train_defect": 3,
+    "validation_normal": 84,
+    "validation_defect": 20,
+    "diagnostic_validation_defect": 1
+  },
+  "initialization": "same cached ImageNet backbone, new adaptor/discriminator; no DS1 trained checkpoint"
+}
